@@ -36,8 +36,9 @@ https://zh.wikipedia.org/wiki/GPT-3
 
 
 ----
->> https://kknews.cc/zh-tw/tech/8g9lk44.html NN CNN RNN LSTM
->> 類神經網路 有權種植
+> https://kknews.cc/zh-tw/tech/8g9lk44.html NN CNN RNN LSTM
+> 
+> 類神經網路 有權種植
 
 ## CNN
 - 捲積神經
@@ -68,7 +69,7 @@ https://brohrer.mcknote.com/zh-Hant/how_machine_learning_works/how_rnns_lstm_wor
   2. 聊天機器人(包含意圖理解、回覆)
 - 和 GRU 類似概念，差別在於 gate 的設定不同(GRU較快)
 
->> NLP 有時序性問題
+> NLP 有時序性問題
 
 
 
