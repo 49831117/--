@@ -1,13 +1,13 @@
 # Database Management System
 
-> ref:[SQL/NoSQL 是什麼？認識資料庫管理系統 DBMS](https://tw.alphacamp.co/blog/sql-nosql-database-dbms-introduction)
-
-
 資料庫管理系統，為使用者（或使用資料庫的應用程式）與資料庫間溝通的平台。
 
 ----
 
 ## 關聯式資料庫、非關聯式資料庫
+
+> ref:[SQL/NoSQL 是什麼？認識資料庫管理系統 DBMS](https://tw.alphacamp.co/blog/sql-nosql-database-dbms-introduction)
+
 
 1. 關聯式資料庫（Relational Database Management System, RDBMS）
     1. 資料是以一個或多個 table 存放
@@ -19,16 +19,12 @@
     2. 資料間有明確關聯
     3. SQL（Structured Query Language）
         - 在 `table` 中取出滿足 `condition` 的資料
-
-
              ```SQL
              SELECT * FROM [TABLE_NAME] WHERE [COND];
              ```
 
 
         1. 
-
-
              ```SQL
              SELECT 
              PayType, COUNT(PayType)
@@ -36,10 +32,7 @@
              WHERE (Status = 'Done' AND CITY ='台北市' AND JOBTIME LIKE '%2018-09%') GROUP BY paytype;
              ```
 
-
         2. 
-
-
              ```SQL
              SELECT 
              PayType, 
@@ -49,7 +42,6 @@
              FROM JOBMAS left join JOBADD on JOBMAS.JOBID=JOBADD.JOBID left join JOBPAY on JOBMAS.JOBID=JOBPAY.JOBID 
              WHERE (CITY ='台北市' AND JOBTIME LIKE '%2018-09%' AND JOBTIME LIKE '% 08:%');
              ```
-
 
 2. NoSQL 非關聯式資料庫
     Not Only SQL, 不限定為「關聯式資料庫」的資料庫管理系統的統稱。
@@ -84,4 +76,13 @@
 
 
 ----
+
+
+## 非關聯式資料庫 NoSQL
+
+- 適合行動、Web、遊戲等，需要**彈性、可擴展性、高效能、高功能**資料庫的新型應用程式。
+  - 可擴展性：一般的設計都能透過硬體的分散式叢集來向外擴展，不必藉由增加昂貴和重量級的伺服器來進行垂直擴展。
+  - 高功能性：NoSQL 資料庫提供專為個別資料模型而建造的高功能 API 和資料。
+
+
 
