@@ -21,34 +21,34 @@
         - 在 `table` 中取出滿足 `condition` 的資料
 
 
-            ```SQL
-            SELECT * FROM [TABLE_NAME] WHERE [COND];
-            ```
+             ```SQL
+             SELECT * FROM [TABLE_NAME] WHERE [COND];
+             ```
 
 
         1. 
 
 
-            ```SQL
-            SELECT 
-            PayType, COUNT(PayType)
-            FROM JOBMAS left join JOBADD on JOBMAS.JOBID=JOBADD.JOBID left join JOBPAY on JOBMAS.JOBID=JOBPAY.JOBID 
-            WHERE (Status = 'Done' AND CITY ='台北市' AND JOBTIME LIKE '%2018-09%') GROUP BY paytype;
-            ```
+             ```SQL
+             SELECT 
+             PayType, COUNT(PayType)
+             FROM JOBMAS left join JOBADD on JOBMAS.JOBID=JOBADD.JOBID left join JOBPAY on JOBMAS.JOBID=JOBPAY.JOBID 
+             WHERE (Status = 'Done' AND CITY ='台北市' AND JOBTIME LIKE '%2018-09%') GROUP BY paytype;
+             ```
 
 
         2. 
 
 
-            ```SQL
-            SELECT 
-            PayType, 
-            COUNT(CASE WHEN Status = 'Done' OR Status = 'Cancel' THEN 1 ELSE 0 END)'原始任務數(Done+Cancel)',
-            COUNT(CASE WHEN Status = 'Done' THEN 1 ELSE 0 END)'完成任務數',
-            COUNT(CASE WHEN Status = 'Done' AND ComeFrom LIKE '%AGC%' THEN 1 ELSE 0 END)'AGC完成任務數'
-            FROM JOBMAS left join JOBADD on JOBMAS.JOBID=JOBADD.JOBID left join JOBPAY on JOBMAS.JOBID=JOBPAY.JOBID 
-            WHERE (CITY ='台北市' AND JOBTIME LIKE '%2018-09%' AND JOBTIME LIKE '% 08:%');
-            ```
+             ```SQL
+             SELECT 
+             PayType, 
+             COUNT(CASE WHEN Status = 'Done' OR Status = 'Cancel' THEN 1 ELSE 0 END)'原始任務數(Done+Cancel)',
+             COUNT(CASE WHEN Status = 'Done' THEN 1 ELSE 0 END)'完成任務數',
+             COUNT(CASE WHEN Status = 'Done' AND ComeFrom LIKE '%AGC%' THEN 1 ELSE 0 END)'AGC完成任務數'
+             FROM JOBMAS left join JOBADD on JOBMAS.JOBID=JOBADD.JOBID left join JOBPAY on JOBMAS.JOBID=JOBPAY.JOBID 
+             WHERE (CITY ='台北市' AND JOBTIME LIKE '%2018-09%' AND JOBTIME LIKE '% 08:%');
+             ```
 
 
 2. NoSQL 非關聯式資料庫
