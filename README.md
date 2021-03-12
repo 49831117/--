@@ -6,4 +6,4 @@
 - [資料數據的爬取](https://github.com/49831117/Essay/blob/master/%E8%B3%87%E6%96%99%E6%95%B8%E6%93%9A%E7%9A%84%E7%88%AC%E5%8F%96.md)
 - [語音辨識](https://github.com/49831117/Essay/blob/master/%E8%AA%9E%E9%9F%B3%E8%BE%A8%E8%AD%98.md)
 - [DBSM](https://github.com/49831117/Essay/blob/master/DBMS.md)
-- [Glow With Google]()
+- [Grow With Google](https://github.com/49831117/Essay/blob/master/Grow%20with%20Google.md)
