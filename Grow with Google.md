@@ -1,9 +1,11 @@
 # Grow with Google
 
 ## 探索機器學習 - 基礎篇
+> 講師：0312-陳右怡/0319-王亦璋
 
-- 講師：陳右宜
 - [What is Machine Learning?](https://www.youtube.com/watch?v=f_uwKZIAeM0)
+
+
 - [玩玩看](https://quickdraw.withgoogle.com/)
   > - 抓重點可以省時有效率
   > - 反思機器如何思考
@@ -12,7 +14,7 @@
   - 問題交流
     - 這遊戲的運作原理？
       - [Data](https://quickdraw.withgoogle.com/data)
-      - 目前約有 5000 萬張，由1500 萬人貢獻，形成一個獨特數據集 Doodle
+      - 目前約有 5000 萬張，由 1500 萬人貢獻，形成一個獨特數據集 doodle set
       - 協助開發人員訓練新的神經網路
       - 幫助了解世界各地的繪畫方式，開源供人自由使用。
     - 系統如何辨識？
